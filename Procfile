@@ -1,1 +1,1 @@
-web: bin/python index.py
+web: index.py
