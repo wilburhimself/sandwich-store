@@ -17,7 +17,6 @@ def sendSandwich(sandwichString):
     url = 'http://pixelpt-sandwich-api.herokuapp.com/sandwiches'
     headers = {'content-type': 'application/json'}
     data = sandwichString
-    #print data
     response = requests.post(url, data=data, headers=headers)
     return response
 

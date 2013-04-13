@@ -88,7 +88,7 @@
                     alert('Some errors prevented your sandwich from being saved ... try again');
                 } else {
                     alert('YAY! your sandwich was saved!!!');
-                    window.location = '/'
+                    window.location = '/';
                 }
             });
         })

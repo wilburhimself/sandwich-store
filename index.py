@@ -1,6 +1,4 @@
 import os
-from sys import argv
-import bottle
 from bottle import route, run, template, static_file, request
 from services.sandwiches import getAllSandwiches, getSandwich, sendSandwich
 STATIC_PATH = os.path.abspath(os.path.dirname(__file__)) + '/static'
@@ -28,12 +26,5 @@ def doSendSandwich():
     sandwich = request.forms.get('sandwich')
     response = sendSandwich(sandwich)
     return response
-    #return sandwich
 
-
-
-
-
-#run(host='localhost', port=8080, debug=True)
-#bottle.run(host='0.0.0.0', port=argv[1])
 run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
