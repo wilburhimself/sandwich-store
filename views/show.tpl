@@ -21,7 +21,7 @@
                     <ul>
                         %for ingredient in sandwich['ingredients']:
                             <li itemprop="ingredients">
-                                {{ingredient['quantity']}} of {{ingredient['name']}}
+                                {{ingredient['quantity']}} {{ingredient['name']}}
                             </li>
                         %end
                     </ul>
