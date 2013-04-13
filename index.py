@@ -35,4 +35,5 @@ def doSendSandwich():
 
 
 #run(host='localhost', port=8080, debug=True)
-bottle.run(host='0.0.0.0', port=argv[1])
+#bottle.run(host='0.0.0.0', port=argv[1])
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
